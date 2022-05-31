@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<title>Видеа</title>
+</head>
+<body>
+<style>
+	a{
+			text-decoration: none;
+			color:#00b7eb; }
+		a:visited {
+		  color:  white;
+		}
+		a:hover {
+		  color:#00ced1;
+		}
+		#playButton1{
+			margin-left: -50px;
+			font-size: 20px;
+			background-color: black;
+			color: white;
+		}
+		#playButton2{
+			margin-left: -50px;
+			font-size: 20px;
+			background-color: black;
+			color: white;
+		}
+		#playButton3{
+			margin-left: -50px;
+			font-size: 20px;
+			background-color: black;
+			color: white;
+		}
+		.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 25px;
+  border: none;
+  border-radius: 40%;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #00ced1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+   margin-left:90px;
+}
+</style>
+<div class="nav-bar2"><br>
+		<a style="margin-left: 30px; margin-right: 30px;  "href="home2.html">Почетна</a>
+		<a style="margin-left: 30px; margin-right: 30px;  "href="rabotno_iskustvo.html">Работно искуство</a>
+		<a style="margin-left: 30px; margin-right: 30px;  "href="obrazovanie.html">Образование</a>
+		<a style="margin-left: 30px; margin-right: 30px;  "href="sertifikati.html">Сертификати и признанија</a>
+		<a style="margin-left: 45px; margin-right: 18px;  "href="hobi.html">Хоби</a>
+		<a style="margin-left: 30px; margin-right: 120px;  " href="vestini.html">Вештини</a><br><br>
+	</div>
+	<p style="color: white; margin-left: 650px; margin-top: -30px; color: #08e8de; ">_________________________________________________________________________________________________________________</p>
+
+<div class="dropdown">
+  <button class="dropbtn">≡ Мени</button>
+  <div class="dropdown-content">
+    <a href="image.html">Слики</a>
+    <a href="hobi.html">Назад</a>
+  </div>
+</div>
+
+
+<div class="video1">
+	<video width="700" height="450" id="myVideo1">
+	   <source src="Istanbul.mp4" type="video/mp4">
+	 </video><button id="playButton1">⏵ / ⏸</button></div>
+
+<script type="text/javascript">
+            var myVideo = document.getElementById('myVideo1');
+            var playButton = document.getElementById('playButton1');
+
+            document.getElementById('myVideo1').addEventListener('ended',myHandler,false);
+function myHandler(e) {
+if (document.exitFullscreen) {
+document.exitFullscreen();
+} else if (document.webkitExitFullscreen) { /* Safari */
+document.webkitExitFullscreen();
+} else if (document.msExitFullscreen) { /* IE11 */
+document.msExitFullscreen();
+}
+}
+
+            playButton.addEventListener('click', function () {
+                if (myVideo1.paused) {
+                    if (myVideo1.requestFullscreen) {
+                        myVideo1.requestFullscreen();
+                    }
+                    else if (myVideo1.msRequestFullscreen) {
+                        myVideo1.msRequestFullscreen();
+                    }
+                    else if (myVideo1.mozRequestFullScreen) {
+                        myVideo1.mozRequestFullScreen();
+                    }
+                    else if (myVideo1.webkitRequestFullScreen) {
+                        myVideo1.webkitRequestFullScreen();
+                    }
+                    myVideo1.play();
+                }
+                else {
+                    myVideo1.pause();
+                }
+            }, false);
+            
+            </script>
+         
+<div class="video2">
+	<video width="700" height="350px" id="myVideo2">
+	   <source src="Scotland.mp4" type="video/mp4">
+ </video><button id="playButton2">⏵ / ⏸</button></div><br><br><br>
+ <script type="text/javascript">
+            var myVideo = document.getElementById('myVideo2');
+            var playButton = document.getElementById('playButton2');
+
+            document.getElementById('myVideo2').addEventListener('ended',myHandler,false);
+function myHandler(e) {
+if (document.exitFullscreen) {
+document.exitFullscreen();
+} else if (document.webkitExitFullscreen) { /* Safari */
+document.webkitExitFullscreen();
+} else if (document.msExitFullscreen) { /* IE11 */
+document.msExitFullscreen();
+}
+}
+
+            playButton.addEventListener('click', function () {
+                if (myVideo2.paused) {
+                    if (myVideo2.requestFullscreen) {
+                        myVideo2.requestFullscreen();
+                    }
+                    else if (myVideo2.msRequestFullscreen) {
+                        myVideo2.msRequestFullscreen();
+                    }
+                    else if (myVideo2.mozRequestFullScreen) {
+                        myVideo2.mozRequestFullScreen();
+                    }
+                    else if (myVideo2.webkitRequestFullScreen) {
+                        myVideo2.webkitRequestFullScreen();
+                    }
+                    myVideo2.play();
+                }
+                else {
+                    myVideo2.pause();
+                }
+            }, false);
+            </script>
+          
+<div class="video3">
+	<video width="700" height="450px" id="myVideo3">
+	   <source src="Poland.mp4" type="video/mp4">
+	 </video><button id="playButton3">⏵ / ⏸</button></div>
+	 <script type="text/javascript">
+            var myVideo = document.getElementById('myVideo3');
+            var playButton = document.getElementById('playButton3');
+
+document.getElementById('myVideo3').addEventListener('ended',myHandler,false);
+function myHandler(e) {
+if (document.exitFullscreen) {
+document.exitFullscreen();
+} else if (document.webkitExitFullscreen) { /* Safari */
+document.webkitExitFullscreen();
+} else if (document.msExitFullscreen) { /* IE11 */
+document.msExitFullscreen();
+}
+}
+            playButton.addEventListener('click', function () {
+                if (myVideo3.paused) {
+                    if (myVideo3.requestFullscreen) {
+                        myVideo3.requestFullscreen();
+                    }
+                    else if (myVideo3.msRequestFullscreen) {
+                        myVideo3.msRequestFullscreen();
+                    }
+                    else if (myVideo3.mozRequestFullScreen) {
+                        myVideo3.mozRequestFullScreen();
+                    }
+                    else if (myVideo3.webkitRequestFullScreen) {
+                        myVideo3.webkitRequestFullScreen();
+                    }
+                    myVideo3.play();
+                }
+                else {
+                    myVideo3.pause();
+                }
+            }, false);
+            </script>
+
+	 
+</body>
+</html>
